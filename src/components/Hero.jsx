@@ -113,9 +113,7 @@ const Hero = () => {
             <a href="#contact" className="px-8 py-4 bg-primary text-background font-bold rounded-full transition-all hover:scale-105 shadow-lg shadow-primary/20 active:scale-95 text-center text-black">
               <FormattedMessage id="hero.quote" defaultMessage="Cotizar Proyecto" />
             </a>
-            <a href="#services" className="px-8 py-4 bg-transparent border border-background/20 dark:border-secundary/20 text-background dark:text-secundary rounded-full transition-all hover:border-accent hover:text-accent text-center">
-              <FormattedMessage id="hero.seeServices" defaultMessage="Ver Servicios" />
-            </a>
+          
           </div>
         </div>
 

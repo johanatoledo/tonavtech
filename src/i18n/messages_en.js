@@ -10,7 +10,6 @@ const messages = {
     title: "I transform your ideas into high-impact <span1>Solutions</span1>.",
     description: "Specialist in high-conversion platforms and integration of <bold>AI Agents</bold>.",
     quote: "Get a Quote",
-    seeServices: "See Services"
   },
   desc: {
     web: {
@@ -81,6 +80,9 @@ const messages = {
     send: "Send Message",
     thanks: "Thank you! I will contact you soon."
   },
+  footer:{
+    copyright: " All rights reserved."
+  }
   // ...other messages
 };
 

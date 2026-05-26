@@ -10,7 +10,6 @@ const messages = {
     title: "Transformo tus ideas en <span1>Soluciones</span1> de <span2>alto impacto</span2>.",
     description: "Especialista en plataformas de alta conversión e integración de <bold>Agentes de IA</bold>.",
     quote: "Cotizar Proyecto",
-    seeServices: "Ver Servicios"
   },
   desc: {
     web: {
@@ -82,6 +81,9 @@ const messages = {
     send: "Enviar Mensaje",
     thanks: "¡Gracias! Me pondré en contacto contigo pronto."
   },
+   footer:{
+    copyright: " Derechos reservados"
+  }
   // ...otros mensajes
 };
 
