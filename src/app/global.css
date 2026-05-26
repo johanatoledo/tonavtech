@@ -1,0 +1,100 @@
+
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ==========================================================================
+   CONFIGURACIÓN DEL TEMA 
+   ========================================================================== */
+@theme {
+  /* Paleta de colores oficiales de TonavTech */
+  --color-background: #0a0a0a;
+  --color-primary: #00ffff;
+  --color-secundary: #ffffff;
+  --color-accent: #ff003c;
+
+  /* Tipografía */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  /* Animaciones y Keyframes integrados */
+  --animate-float: float 4s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+}
+
+/* ==========================================================================
+   ESTILOS BASE
+   ========================================================================== */
+@layer base {
+  html {
+  scroll-behavior: smooth;
+}
+   body {
+    background-color: #ffffff;
+    color: #0a0a0a;
+    font-family: var(--font-sans);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html.dark body {
+    background-color: #050505;
+    background-image:
+      radial-gradient(ellipse 40% 30% at 0% 0%, rgba(0, 255, 255, 0.25) 0%, transparent 80%),
+      radial-gradient(ellipse 40% 30% at 100% 100%, rgba(255, 0, 60, 0.18) 0%, transparent 80%);
+    color: var(--color-secundary);
+  }
+  /* Personalización del scrollbar integrada con tu identidad visual */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #050505;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-primary); /* Apunta automáticamente a #00ffff */
+    border-radius: 10px;
+  }
+}
+
+/* ==========================================================================
+   COMPONENTES Y CLASES DE UTILIDAD 
+   ========================================================================== */
+@utility btn-cyber {
+  @apply bg-transparent text-white rounded-full px-8 py-3 font-bold border-2 border-transparent transition-colors duration-300;
+  &:hover {
+    @apply text-primary;
+  }
+}
+
+@utility btn-primary {
+  @apply px-6 py-2 border-2 border-primary text-primary hover:bg-primary hover:text-black transition-all duration-300;
+}
+
+@utility diagonal-gradient-pro {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 255, 0.15) 20%,  /* Cian suave */
+    rgba(5, 5, 5, 1) 40%,         /* Negro sólido */
+    rgba(255, 0, 60, 0.2) 100%    /* Rojo sutil */
+  );
+  background-color: #050505;
+}
+
+
+
+/* Personalización ciberpunk de las balas de Swiper */
+.tonavtech-swiper {
+  & .swiper-pagination-bullet {
+    background: #333 !important;
+    opacity: 1 !important;
+  }
+  
+  & .swiper-pagination-bullet-active {
+    background: var(--color-primary) !important; /* Utiliza el cian #00ffff del @theme */
+    box-shadow: 0 0 10px var(--color-primary);
+  }
+}

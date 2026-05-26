@@ -1,0 +1,45 @@
+{
+  "name": "tonavtech",
+  "version": "1.0.0",
+  "description": "web tonavtech",
+  "homepage": "https://github.com/johanatoledo/tonavtech#readme",
+  "bugs": {
+    "url": "https://github.com/johanatoledo/tonavtech/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johanatoledo/tonavtech.git"
+  },
+  "license": "ISC",
+  "author": "Johana Toledo",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "qr": "node scripts/generarQR.js",
+    "optimize": "node scripts/optimizar-images.js"
+  },
+  "dependencies": {
+    "@tsparticles/engine": "^4.0.5",
+    "@tsparticles/react": "^4.0.5",
+    "@tsparticles/slim": "^4.0.5",
+    "lucide-react": "^1.16.0",
+    "next": "16.2.4",
+    "qrcode": "^1.5.4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-icons": "^5.6.0",
+    "react-intl": "^10.1.8",
+    "swiper": "^12.1.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "tailwindcss": "^4"
+  }
+}
