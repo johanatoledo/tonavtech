@@ -46,7 +46,7 @@ export default function Footer() {
         </div>
 
           {/* LADO DERECHO:  Logo de TonavTech */}
-        <div className="order-1 md:order-3 flex items-center select-none shrink-0">
+        <div className="order-1 md:order-2 flex items-center select-none shrink-0">
           <Image 
             src="/images/logo-tonavtech.svg" 
             alt="TonavTech Logo"
